@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $("button").click(function () {
+      $("#p1").css({"background-color": "pink"});
+      $("#p2").css({"color":"blue"});
+      $("#p3").css({"color":$("#p1").css("color"), "font-weight":$("#p1").css("font-weight"), "background-color":
+      $("#p2").css("background-color")});
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <p style="color:#ff0000; font-weight: bold;" id="p1">This is a paragraph.</p>
+  <p style="background-color:#eeff00 " id="p2">This is a paragraph.</p>
+  <p id="p3">This is a paragraph.</p>
+  <button>Change background-color of p</button>
+</body>
+
+</html>

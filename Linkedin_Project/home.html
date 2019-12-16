@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Main page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            border: thin;
+            max-width: 300px;
+            margin: auto;
+            text-align: center;
+            font-family: arial;
+        }
+
+        .title {
+            color: grey;
+            font-size: 18px;
+        }
+
+        a {
+            text-decoration: none;
+            font-size: 22px;
+            color: black;
+        }
+
+        header {
+            background-color: #283e4a;
+            padding: 0 150px;
+            height: 52px;
+            align-items: center;
+        }
+
+        #sec-logo {
+            height: 30px;
+            width: 30px;
+            margin: 10px;
+
+
+        }
+
+        .search-container input,
+        #first-logo {
+            float: left;
+            border: 0;
+            height: 30px;
+
+
+        }
+
+        #sec-logo {
+            border-radius: 3px;
+        }
+
+        .search-container input {
+            padding-right: 30px;
+            border-radius: 3px;
+        }
+
+        .search-container {
+            padding-top: 10px;
+        }
+
+        .search-container button {
+            height: 30px;
+            width: 30px;
+            padding: 0;
+            margin: 0;
+
+        }
+
+        #search {
+            height: 23px;
+            width: 27px;
+        }
+
+        .menubar {
+            background-color: rgb(172, 172, 230);
+            height: 50px;
+            width: 100%;
+        }
+
+        .mainDiv {
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+
+        .first {
+            background-color: rgb(246, 246, 252);
+            height: 50px;
+            width: 100%;
+        }
+
+        body {
+            background-color: #f6f6fc;
+        }
+
+        .post {
+            margin-left: 335px;
+            width: 48%;
+            height: 20%;
+        }
+
+        .multimedia {
+            padding-top: 10px;
+        }
+
+        #post3 {
+            height: 300px;
+            width: 605px;
+        }
+
+        #sharepost {
+            background-color: white;
+            height: 70px;
+            width: 397px;
+            border-style: double;
+            float: left;
+        }
+
+        #cam,
+        #video {
+            background-color: white;
+            height: 70px;
+            width: 70px;
+            border-style: double;
+            float: left;
+        }
+
+        #notes {
+            background-color: white;
+            height: 70px;
+            width: 70px;
+            border-style: double;
+            float: left;
+        }
+
+        .post1 {
+            width: 606px;
+        }
+
+    </style>
+</head>
+<header>
+    <div id="first-logo">
+        <img src="LinkedIn.jpg" alt="" id="sec-logo">
+    </div>
+    <div class="search-container">
+        <input type="text" placeholder="Search.." name="search">
+        <button type="submit"><img src="search-icon.png" id="search"></img></button>
+    </div>
+</header>
+
+<body>
+    <div class="menubar">
+
+    </div>
+    <div class="mainDiv">
+        <section class="first">
+
+        </section>
+        <aside style="float: left;" ;>
+            <div class="card">
+                <img src="john.jpg" alt="John" style="width:100%">
+                <h1>John Doe</h1>
+                <p class="title">CEO & Founder, Example</p>
+                <p>Harvard University</p>
+                <div style="margin: 24px 0;">
+                    <a href="#"><i class="fa fa-dribbble"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                </div>
+            </div>
+        </aside>
+
+        <div class="post">
+            <div class="middle">
+                <button id="sharepost"><i class="fa fa-pencil-square-o">Start a post</i></button>
+                <button id="cam"> <i class="fa fa-camera"></i></button>
+                <button id="video"><i class="fa fa-video-camera"></i></button>
+                <button id="notes"><i class="fa fa-file-text"></i></button>
+            </div>
+            <div>
+                <img src="certificate.jpg" alt="" class="post1">
+            </div>
+            <div class="multimedia">
+                <video width="605px" height="400px" autoplay controls muted>
+                    <source src="/fsd-course/html_examples/ibm-website-html5/assets/videos/mov_bbb.mp4"
+                        type="video/mp4">
+                </video>
+            </div>
+            <div>
+                <img src="conference.jpg" alt="" id="post3">
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

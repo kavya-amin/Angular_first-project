@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Use any one -->
+    <!--local jQuery -->
+    <script src="jquery-3.4.1.js"> </script>
+    <!-- Google CDN
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>-->
+    <!-- Microsoft CDN
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>-->
+
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                //$("h2").hide();
+                //$("p").hide();
+                //$(this).hide();
+                //$("p").hide();
+                //$("p:last").show();
+                //$("p.intro").hide();
+                // $("ul li:first").hide();
+                //$("ul li:first-child").hide();
+                //$("[href]").hide();
+                //$("a[target='hide']").hide();
+                //$("a[target='hide']").hide();
+                $(":button").hide();
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <h2>This is a heading</h2>
+    <p class="intro">This is a paragraph.</p>
+    <p id="test">This is another paragraph.</p>
+    <ul>
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+    </ul>
+    <ul>
+        <li>four</li>
+        <li>five</li>
+        <li>six</li>
+    </ul>
+    <a href="#" target="hide">Click button to hide</a>
+    <a href="#" target="hide1">Click button to hide later</a>
+    <button>Click me</button>
+</body>
+
+</html>

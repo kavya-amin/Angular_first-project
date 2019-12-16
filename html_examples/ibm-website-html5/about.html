@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/styles/main.css">
+</head>
+
+<body>
+    <header>
+        <img src="assets/images/ibm.png" alt="IBM Logo">
+        <!--unordered list-->
+        <nav id="mainNav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="downloads.html">Downloads</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="signin.html">Login In</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+    <aside class="sidebar">
+        <nav id="sidebarNav">
+            <ul>
+                <li><a href="#history">History of IBM</a></li>
+                <li><a href="#leadership">Leadership</a></li>
+                <li><a href="#investors">Investors</a></li>
+                <li><a href="#recruitments">Recruitments</a></li>
+            </ul>
+        </nav>
+    </aside>
+    <main class="mainContainer">
+        <h1>About IBM</h1>
+        <div id="history">
+            <h4>History</h4>
+            <p>IBM originated from the bringing together of
+                several companies that worked to automate routine business transactions,
+                including the first companies to build punch card based
+                data tabulating machines and to build time clocks.
+                In 1924 the company changed its name to "International Business Machines."</p>
+        </div>
+        <div id="leadership">
+            <h4>Leadership</h4>
+            <p>Virginia M. (Ginni) Rometty is chairman, president and chief executive officer of IBM.
+                Since becoming CEO in January 2012,
+                Ginni has led IBM through the most significant transformation in its history,
+                reinventing the company to lead in the new era of AI, blockchain,
+                cybersecurity and quantum technologies, all delivered on IBM’s enterprise-strength cloud platform.
+                Today, IBM is the world leader in AI and cloud computing for business,
+                underpinned with trust and security.</p>
+        </div>
+        <div id="investors">
+            <h4>Investors</h4>
+            <p>
+                The IBM Investor Relations, website contains information about IBM for current stockholders,
+                potential investors, students, and institutional analyst.
+            </p>
+        </div>
+        <div id="recruitments">
+            <h2>We hire actively</h2>
+            <section id="profileUpload">
+                <p>
+                    Submit your profile here
+                </p>
+                <form>
+                    <div>
+                        <label for="fulName">Enter Full Name <sup>*</sup>: </label>
+                        <input type="text" id="fulName" name="fulName" placeholder="Enter your full name here" required
+                            autofocus>
+                    </div>
+                    <div>
+                        <label for="profile"> Upload Profile <sup>*</sup>: </label>
+                        <input type="file" id="profile" name="profile">
+                    </div>
+                </form>
+            </section>
+            <p>Learn more about employees in IBM</p>
+            <!-- to load other links in our page (most of the links will refuse to connect), Inline element tag-->
+            <iframe src="https://en.wikipedia.org/wiki/IBM_India" width="200" height="200"></iframe>
+        </div>
+    </main>
+</body>
+
+</html>

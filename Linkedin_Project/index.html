@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Main page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        header {
+            background-color: #283e4a;
+            padding: 0 150px;
+            height: 52px;
+            align-items: center;
+        }
+
+        #sec-logo {
+            height: 30px;
+            width: 30px;
+            margin: 10px;
+
+
+        }
+
+        .search-container input,
+        #first-logo {
+            float: left;
+            border: 0;
+            height: 30px;
+
+
+        }
+
+        #sec-logo {
+            border-radius: 3px;
+        }
+
+        .search-container input {
+            padding-right: 30px;
+            border-radius: 3px;
+        }
+
+        .search-container {
+            padding-top: 10px;
+        }
+
+        .search-container button {
+            height: 30px;
+            width: 30px;
+            padding: 0;
+            margin: 0;
+
+        }
+
+        #search {
+            height: 23px;
+            width: 27px;
+        }
+
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            max-width: 300px;
+            margin: auto;
+            text-align: center;
+            font-family: arial;
+        }
+        .left-rail{
+            float:left;
+        }
+
+        #sharepost{
+            background-color: white;
+    height: 70px;
+    width: 442px;
+    border-style: double;
+    float:left;
+        }
+        #cam,#video{
+            background-color: white;
+    height: 70px;
+    width: 70px;
+    border-style: double;
+    float:left;
+        }
+        #notes{
+            background-color: white;
+    height: 70px;
+    width: 70px;
+    border-style: double;
+    float:left;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div id="first-logo">
+            <img src="LinkedIn.jpg" alt="" id="sec-logo">
+        </div>
+        <div class="search-container">
+            <input type="text" placeholder="Search.." name="search">
+            <button type="submit"><img src="search-icon.png" id="search"></img></button>
+        </div>
+
+    </header>
+    <div class="main-content">
+        <aside class="left-rail">
+            <div class="card">
+                <img src="/w3images/team2.jpg" alt="John" style="width:100%">
+                <h1>John Doe</h1>
+                <p class="title">CEO & Founder, Example</p>
+                <p>Harvard University</p>
+
+            </div>
+        </aside>
+        <div class="middle">
+            <button id="sharepost"><i class="fa fa-pencil-square-o">Start a post</i></button>
+            <button id="cam"> <i class="fa fa-camera"></i></button>
+            <button id="video"><i class="fa fa-video-camera"></i></button>
+            <button id="notes"><i class="fa fa-file-text"></i></button>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

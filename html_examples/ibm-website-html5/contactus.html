@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/styles/main.css">
+</head>
+
+<body>
+    <header>
+        <img src="assets/images/ibm.png" alt="">
+        <nav id="mainNav">
+            <!--unordered list-->
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="downloads.html">Downloads</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="signin.html">Login In</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Contact us -- fill in the form below</h1>
+        <form action="formSubmission.html" method="POST" autocomplete="on">
+            <!--file:///C:/Users/b8ibmjava19/Desktop/fsd-course/html_examples
+                        /ibm-website/formSubmission.html?fullName=arun&email=ssadn&typeOfQuery=1&query=dbhsd-->
+            <!--Query parameter-->
+            <div class="formField">
+                <label for="fullName">Enter Full Name <sup>*</sup>: </label>
+                <input type="text" id="fullName" name="fullName" required placeholder="Enter full name" autofocus>
+            </div>
+            <div class="formField">
+                <label for="email">Enter E-Mail <sup>*</sup>: </label>
+                <input type="email" id="email" name="email" required placeholder="Enter your email">
+            </div>
+            <div class="formField">
+                <label for="telephone">Enter Phone Number <sup>*</sup>: </label>
+                <input type="tel" id="telephone" name="telephone" required placeholder="only digits" maxlength="10">
+            </div>
+            <div class="formField">
+                <label for="age">Enter Age <sup>*</sup>: </label>
+                <input type="number" id="age" name="age" required min="18" max="100" step="1">
+            </div>
+            <div class="formField">
+                <label for="typeOfQuery">Choose Type of Query: </label>
+                <select id="typeOfQuery" name="typeOfQuery" required>
+                    <option value="0">--Select any one--</option>
+                    <option value="1">Business Consulting</option>
+                    <option value="2">Software Support</option>
+                    <option value="3">Reporting Issues in Software</option>
+                    <option value="4">Investor Related</option>
+                    <option value="5">Media Relations</option>
+                </select>
+            </div>
+            <div class="formField"><label for="query" style="vertical-align: top;">Enter the Query: </label>
+                <textarea id="query" name="query" placeholder="Type Query"></textarea>
+            </div>
+            <div class="formField">
+                <label for=""></label>
+                <button type="reset" class="resetBtn">Reset</button>
+                <input type="submit" value="Send Query" class="sendBtn">
+            </div>
+        </form>
+        <h2>We are here</h2>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15547.160425319873!2d77.620167!3d13.0490282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x22254ae8af264cd5!2sIBM%20India%20D3%20Block!5e0!3m2!1sen!2sin!4v1567597354869!5m2!1sen!2sin"
+            width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+    </main>
+</body>
+
+</html>

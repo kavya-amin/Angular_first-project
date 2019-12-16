@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+        var eid=101
+        var name="Arjun"
+        var salary=10.5
+        console.log(typeof eid)
+        console.log(typeof name)
+        console.log(typeof salary)
+        var strQuantity="15"
+        var strDiscount="10.25"
+        console.log(typeof strQuantity)
+        console.log(typeof strDiscount)
+        var quantity= parseInt(strQuantity)
+        var discount= parseFloat(strDiscount)
+        console.log(typeof quantity)
+        console.log(typeof discount)
+
+        var a=10
+        var b=3
+        console.log(a+b)
+        console.log(a-b)
+        console.log(a*b)
+        console.log(a/b)
+        console.log(a**b)
+        console.log(a%b)
+
+        console.log(a==b)
+        console.log(a!=b)
+        console.log(a>b)
+        console.log(a>=b)
+        console.log(a<b)
+        console.log(a<=b)
+        
+        var flag=0;
+        if(flag){
+            console.log('truthy')
+        }
+        else{
+            console.log('falsy')
+        }
+
+        var fruitsToBuy=['Apples','Orange','Bananas'];
+        console.log(fruitsToBuy);
+
+        function foo(){
+            if(true){
+                var c='Variable in a block within foo';
+                console.log('c (outside if block)= ', c)
+            }
+            console.log('c (outside if block) = ',c)
+        }
+        foo();
+        </script>
+    </body>
+</html>

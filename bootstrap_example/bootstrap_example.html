@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Contextual Colors</h1>
+        <p class="text-muted">Text muted</p>
+        <p class="text-primary">Important Text</p>
+        <p class="text-success">Text indicates success</p>
+        <p class="text-info">Text information</p>
+        <p class="text-warning">Text warning</p>
+        <p class="text-danger">Text represents Danger</p>
+        <p class="text-secondary">Secondary Text</p>
+        <p class="text-dark">Text is dark gray</p>
+        <p class="text-body">Default color</p>
+        <p class="text-light">Text light gray(on white bg)</p>
+        <p class="text-white">Text white(on white bg)</p>
+    </div>
+
+    <div class="container">
+        <h2>Opacity Text color</h2>
+        <p>Add 50% opacity for black or white text with the .text-black-50 or .text-white-50 classes:</p>
+        <p class="text-black-50">Black text with 50% opacity on white background</p>
+        <p class="text-white-50 bg-dark">White text with 50% opacity on black background</p>
+    </div>
+
+    <div class="container">
+        <h2>Contextual Background colors</h2>
+        <p class="bg-primary text-white">This text is important.</p>
+        <p class="bg-success text-white">This text indicates success.</p>
+        <p class="bg-info text-white">This text represents some information.</p>
+        <p class="bg-warning text-white">This text represents a warning.</p>
+        <p class="bg-danger text-white">This text represents danger.</p>
+        <p class="bg-secondary text-white">Secondary background color.</p>
+        <p class="bg-dark text-white">Dark grey background color.</p>
+        <p class="bg-light text-dark">Light grey background color.</p>
+    </div>
+
+    <div class="container">
+        <h2>Basic Table</h2>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Firstname</th>
+                    <th>Lastname</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>John</td>
+                    <td>Doe</td>
+                    <td>john@example.com</td>
+                </tr>
+                <tr>
+                    <td>Mary</td>
+                    <td>Moe</td>
+                    <td>mary@example.com</td>
+                </tr>
+                <tr>
+                    <td>July</td>
+                    <td>Dooley</td>
+                    <td>july@example.com</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="container">
+        <h2>Rounded Corners</h2>
+        <img src="img.jpg" class="rounded" alt="Colorful" width="300" height="200">
+    </div>
+
+    <div class="container">
+        <h2>Thumbnail</h2>
+        <img src="img.jpg" class="img-thumbnail" alt="Colorful" width="300" height="200">
+    </div>
+
+    <div class="container">
+        <h2>Aligning Image</h2>
+        <img src="img.jpg" class="float-left">
+        <img src="img1.jpg" class="float-right">
+    </div>
+
+    <div class="container">
+        <h2>Centered image</h2>
+        <img src="img1.jpg" class="mx-auto d-block">
+    </div>
+
+    <div class="container">
+        <h2>responsive image</h2>
+        <img src="img1.jpg" class="img-fluid">
+    </div>
+
+    <div class="container">
+        <div class="jumbotron">
+            <h1>Bootstrap Tutorial</h1>
+            <p>Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile-first
+                projects on the web.</p>
+        </div>
+        <p>This is some text.</p>
+        <p>This is another text.</p>
+    </div>
+
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1>Bootstrap Tutorial</h1>
+            <p>Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile-first
+                projects on the web.</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Alerts</h2>
+        <p>Alerts are created with the .alert class, followed by a contextual color classes:</p>
+        <div class="alert alert-success">
+            <strong>Success!</strong> This alert box could indicate a successful or positive action.
+        </div>
+        <div class="alert alert-info">
+            <strong>Info!</strong> This alert box could indicate a neutral informative change or action.
+        </div>
+        <div class="alert alert-warning">
+            <strong>Warning!</strong> This alert box could indicate a warning that might need attention.
+        </div>
+        <div class="alert alert-danger">
+            <strong>Danger!</strong> This alert box could indicate a dangerous or potentially negative action.
+        </div>
+        <div class="alert alert-primary">
+            <strong>Primary!</strong> Indicates an important action.
+        </div>
+        <div class="alert alert-secondary">
+              <strong>Secondary!</strong> Indicates a slightly less important action.
+        </div>
+        <div class="alert alert-dark">
+              <strong>Dark!</strong> Dark grey alert.
+        </div>
+        <div class="alert alert-light">
+              <strong>Light!</strong> Light grey alert.
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Alerts</h2>
+        <p>The button with class="close" and data-dismiss="alert" is used to close the alert box.</p>
+        <p>The alert-dismissible class adds some extra padding to the close button.</p>
+        <div class="alert alert-success alert-dismissible">
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            <strong>Success!</strong> This alert box could indicate a successful or positive action.
+        </div>
+        <div class="alert alert-info alert-dismissible">
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            <strong>Info!</strong> This alert box could indicate a neutral informative change or action.
+        </div>
+        <div class="alert alert-warning alert-dismissible">
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            <strong>Warning!</strong> This alert box could indicate a warning that might need attention.
+        </div>
+        <div class="alert alert-danger alert-dismissible">
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            <strong>Danger!</strong> This alert box could indicate a dangerous or potentially negative action.
+        </div>
+        <div class="alert alert-primary alert-dismissible">
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            <strong>Primary!</strong> Indicates an important action.
+        </div>
+        <div class="alert alert-secondary alert-dismissible">
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            <strong>Secondary!</strong> Indicates a slightly less important action.
+        </div>
+        <div class="alert alert-dark alert-dismissible">
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            <strong>Dark!</strong> Dark grey alert.
+        </div>
+        <div class="alert alert-light alert-dismissible">
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            <strong>Light!</strong> Light grey alert.
+        </div>
+    </div>
+</body>
+
+</html>

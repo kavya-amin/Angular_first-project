@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        h2,
+        h3 {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .example {
+            background: #f2f2f2;
+        }
+        
+        .example_content {
+            background: white;
+            margin: 16px;
+            padding: 8px;
+            border-left: 5px solid green;
+        }
+
+        button {
+            background: green;
+            color: white;
+            margin: 16px;
+            height: 50px;
+        }
+
+        #t1 td, th, #t2 td, th, #t3 td, th {
+            border: 1px solid black;
+        }
+
+        #t1, #t2, #t3 {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        #t1 th {
+            height: 50px;
+        }
+
+        #t2 th {
+            text-align: left;
+        }
+
+        #t3 td {
+            height: 50px;
+            vertical-align: bottom;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Bhavna's Code -->
+
+    <!-- Kavya's Code -->
+    <div>
+        <h2>Table Width and Height</h2>
+        <p>
+            Width and height of a table are defined by the width and height properties.
+        </p>
+        <div>
+            <p>
+                The example below sets the width of the table to 100%, and the height of the &lt;th&gt; elements to
+                50px:
+            </p>
+            <table id="t1">
+                <tr>
+                    <th>Firstname</th>
+                    <th>Lastname</th>
+                    <th>Savings</th>
+                </tr>
+                <tr>
+                    <td>Peter</td>
+                    <td>Griffin</td>
+                    <td>$100</td>
+                </tr>
+                <tr>
+                    <td>Lois</td>
+                    <td>Griffin</td>
+                    <td>$150</td>
+                </tr>
+                <tr>
+                    <td>Joe</td>
+                    <td>Swanson</td>
+                    <td>$300</td>
+                </tr>
+                <tr>
+                    <td>Cleveland</td>
+                    <td>Brown</td>
+                    <td>$250</td>
+                </tr>
+            </table>
+            <div class="example">
+                <h3>Example</h3>
+                <div class="example_content">
+                    <p>table {<br>
+                        width: 100%;<br>
+                        } <br>
+                        <br>
+                        th { <br>
+                        height: 50px; <br>
+                        }
+                    </p>
+                </div>
+                <button>
+                    <p>Try it Yourself >></p>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div>
+        <h2>Horizontal Alignment</h2>
+        <p>The text-align property sets the horizontal alignment (like left, right, or center) of the content in
+            &lt;th&gt; or
+            &lt;td&gt;.
+        </p>
+        <p>By default, the content of &lt;th&gt; elements are center-aligned and the content of
+            &lt;td&gt; elements are left-aligned.
+        </p>
+        <div>
+            <p>The following example left-aligns the text in <th> elements: </p>
+            <table id="t2">
+                <tr>
+                    <th>Firstname</th>
+                    <th>Lastname</th>
+                    <th>Savings</th>
+                </tr>
+                <tr>
+                    <td>Peter</td>
+                    <td>Griffin</td>
+                    <td>$100</td>
+                </tr>
+                <tr>
+                    <td>Lois</td>
+                    <td>Griffin</td>
+                    <td>$150</td>
+                </tr>
+                <tr>
+                    <td>Joe</td>
+                    <td>Swanson</td>
+                    <td>$300</td>
+                </tr>
+                <tr>
+                    <td>Cleveland</td>
+                    <td>Brown</td>
+                    <td>$250</td>
+                </tr>
+            </table>
+            <div class="example">
+                <h3>Example</h3>
+                <div class="example_content">
+                    <p>th { <br>
+                        text-align: left; <br>
+                        }
+                    </p>
+                </div>
+                <button>
+                    <p>Try it Yourself >></p>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div>
+        <h2>Vertical Alignment</h2>
+        <p>The vertical-align property sets the vertical alignment (like top, bottom, or middle) of the content in
+            &lt;th&gt;
+            or &lt;td&gt;.
+        </p>
+        <p>By default, the vertical alignment of the content in a table is middle (for both &lt;th&gt; and
+            &lt;td&gt; elements).
+        </p>
+        <div>
+            <p>The following example sets the vertical text alignment to bottom for &lt;td&gt; elements:</p>
+            <table id="t3">
+                <tr>
+                    <th>Firstname</th>
+                    <th>Lastname</th>
+                    <th>Savings</th>
+                </tr>
+                <tr>
+                    <td>Peter</td>
+                    <td>Griffin</td>
+                    <td>$100</td>
+                </tr>
+                <tr>
+                    <td>Lois</td>
+                    <td>Griffin</td>
+                    <td>$150</td>
+                </tr>
+                <tr>
+                    <td>Joe</td>
+                    <td>Swanson</td>
+                    <td>$300</td>
+                </tr>
+                <tr>
+                    <td>Cleveland</td>
+                    <td>Brown</td>
+                    <td>$250</td>
+                </tr>
+            </table>
+            <div class="example">
+                <h3>Example</h3>
+                <div class="example_content">
+                    <p>td { <br>
+                        height: 50px; <br>
+                        vertical-align: bottom; <br>
+                        }
+                    </p>
+                </div>
+                <button>
+                    <p>Try it Yourself >></p>
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- Nidarsh's Code -->
+
+    <!-- Nisha's Code -->
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>About</title>
+</head>
+
+<body>
+    <div>
+        <img src="images/ibm.png">
+        <div id="mainNav">
+            <!--unordered list-->
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="downloads.html">Downloads</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+    <div>
+        <h1>Contact us -- fill in the form below</h1>
+        <form action="formSubmission.html" method="GET">
+            <!--file:///C:/Users/b8ibmjava19/Desktop/fsd-course/html_examples
+                /ibm-website/formSubmission.html?fullName=arun&email=ssadn&typeOfQuery=1&query=dbhsd-->
+            <!--Query parameter-->
+            <div>
+                <label for="fullName">Enter Full Name: </label>
+                <input type="text" id="fullName" name="fullName">
+            </div>
+            <div>
+                <label for="email">Choose Type of Query: </label>
+                <input type="text" id="email" name="email">
+            </div>
+            <div>
+                <label for="typeOfQuery">Enter E-Mail: </label>
+                <select id="typeOfQuery" name="typeOfQuery">
+                    <option value="1">Business Consulting</option>
+                    <option value="2">Software Support</option>
+                    <option value="3">Reporting Issues in Software</option>
+                    <option value="4">Investor Related</option>
+                    <option value="5">Media Relations</option>
+                </select>
+            </div>
+            <div><label for="query">Enter the Query: </label>
+                <textarea id="query" name="query"></textarea>
+            </div>
+            <div>
+                <button type="reset">Reset</button>
+                <input type="submit" value="Send Query">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

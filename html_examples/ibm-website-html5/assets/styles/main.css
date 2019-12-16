@@ -1,0 +1,275 @@
+        /*to reset all browser styles*/
+
+        /* http://meyerweb.com/eric/tools/css/reset/ 
+        v2.0 | 20110126
+        License: none (public domain)*/
+
+        html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+        }
+
+        /* HTML5 display-role reset for older browsers */
+
+        article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+            display: block;
+        }
+
+        body {
+            line-height: 1;
+        }
+
+        ol, ul {
+            list-style: none;
+        }
+
+        blockquote, q {
+            quotes: none;
+        }
+
+        blockquote:before, blockquote:after, q:before, q:after {
+            content: '';
+            content: none;
+        }
+
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+        /*reset style ends*/
+
+        /*internal style*/
+
+        body {
+            margin: 0;
+            background-color: rgb(247, 246, 202); 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        header {
+            background-color: salmon;
+            padding: 20px;
+        }
+
+        #mainNav, #secondNav{
+            text-align: center;
+        }
+
+        #mainNav ul li, #secondNav ul li{
+            list-style: none; /*removes bullet*/
+            display: inline; /*will display all li's in one line*/
+            padding: 6px;
+        }
+
+        #mainNav ul li a{
+            color: #ffffff;
+        }
+
+        #secondNav{
+            margin: 40px;
+        }
+
+        main {
+            text-align: center;
+        }
+
+        button{
+            background: rgb(81, 12, 209);
+            padding: 30px 40px;
+            font-size: 28px;
+            margin: 20px;
+            color: #ffffff;
+            cursor: pointer;
+            border: 5px solid rgb(36, 11, 82);
+        }
+
+        button:hover{
+            background: #30d353;
+        }
+
+        footer {
+            background-color: burlywood;
+            text-align: center;
+            padding: 20px;
+            border-top: 1px solid #deec15;
+        }
+
+        .draggable {
+            width: 400px;
+            height: 80px;
+            text-align: center;
+            border: dashed 4px red;
+        }
+
+        .draggableBox1 {
+            background: yellow;
+        }
+
+        .draggableBox2 {
+            background: rgb(203, 166, 238);
+        }
+        /*typography*/
+        h1,h2,h3,h4,h5,h6{
+            font-weight: bold;
+            padding: 20px;
+        }
+        h1{
+            font-size: 32px;
+            color: crimson;
+        }
+        h2{
+            font-size: 28px;
+            color: indigo;
+        }
+        h3{
+            font-size: 24px;
+        }
+        h4{
+            font-size: 22px;
+            color: darkmagenta;
+        }
+        h3{
+            font-size: 20px;
+        }
+        h2{
+            font-size: 16px;
+        }
+
+        #dragNdrop{
+            padding: 20px;
+            margin: 30px 30px;
+            overflow: auto;
+        }
+
+        .text-center{
+            text-align: center;
+        }
+
+        .float-left{
+            float: left;
+        }
+
+        .float-right{
+            float: right;
+        }
+
+        .clearFloat{
+            clear: both;
+        }
+
+        /*about page*/
+        .sidebar{
+            float: left;
+            width: 25%;
+            position: fixed;
+            height: 100%;
+            background: #2126F3;
+        }
+        .mainContainer{
+            float: left;
+            margin-left: 27%;
+            width: 73%;
+            text-align: left;
+        }
+        #sidebarNav{
+            padding: 24px;
+        }
+        #sidebarNav ul li{
+            line-height: 32px;
+        }
+        #sidebarNav ul li a{
+            color: #ffffff
+        }
+        
+        table{
+            margin: 50px auto;/*will place the table in center*/
+            border: solid 1px rgb(7, 7, 139) !important;
+            border-collapse: collapse;
+        }
+
+        table thead tr{
+            font-weight: bold;
+            background: #000000;
+            color: #ffffff;
+        }
+
+        table tr, table tr td{
+            border: solid 1px rgb(7, 7, 139);
+            padding: 20px;
+        }
+
+        table tr:hover{
+            background: rgb(217, 224, 228);
+        }
+
+        table a{
+            padding: 10px;
+        }
+        
+        table a:hover{
+            border-bottom: 2px solid #30d353;
+            color: aquamarine;
+            background: #2126F3;
+        }
+        .downloadWrapper{
+            height: calc(100vh - 180px); /*view port height*/
+        }
+
+        form{
+            text-align: left;
+        }
+
+        .formField{
+            padding: 15px;
+            width: 50%;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .formField label{
+            text-align: right;
+            width: 200px;
+            display: inline-block;
+        }
+        .formField input, .formField select{
+            width: 200px;
+        }
+
+        input, select, textarea{
+            padding: 7px 12px;
+            border: 1px solid rgb(36, 11, 82);
+            font-size: 15px;
+        }
+
+        .resetBtn{
+            background: #ffffff;
+            padding: 10px 20px;
+            font-size: 22px;
+            margin: 0px;
+            color: rgb(36, 11, 82);
+            cursor: pointer;
+            border: 1px solid rgb(36, 11, 82);
+        }
+        
+        .resetBtn:hover{
+            background: #9b8888;
+        }
+
+        .sendBtn{
+            background: rgb(36, 11, 82);
+            padding: 10px 20px;
+            font-size: 22px;
+            margin: 0px;
+            color: #ffffff;
+            cursor: pointer;
+            border: 1px solid rgb(36, 11, 82);
+        }
+
+        .sendBtn:hover{
+            background: rgb(36, 11, 82);
+        }

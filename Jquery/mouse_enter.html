@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#p1").mouseenter(function(){
+    alert("You entered p1!");
+  });
+});
+</script>
+<script>
+    $(document).ready(function(){
+      $("#p2").mouseleave(function(){
+        alert("Bye! You now leave p2!");
+      });
+    });
+    </script>
+    <script>
+        $(document).ready(function(){
+          $("#p3").mousedown(function(){
+            alert("Mouse down over p3!");
+          });
+        });
+        </script>
+        <script>
+            $(document).ready(function(){
+              $("#p4").mouseup(function(){
+                alert("Mouse up over p4!");
+              });
+            });
+            </script>
+            <script>
+                $(document).ready(function(){
+                  $("#p1").hover(function(){
+                    alert("You entered p1!");
+                  },
+                  function(){
+                    alert("Bye! You now leave p4!");
+                  }); 
+                });
+                </script>                
+        
+</head>
+<body>
+<p id="p1">Enter this paragraph.</p>
+<p id="p2">This is a paragraph for mouseleave.</p>
+<p id="p3">This is a paragraph for mousedown.</p>
+<p id="p4">This is a paragraph for mouseup.</p>
+<p id="p5">This is a paragraph for mousehover.</p>
+</body>
+</html>

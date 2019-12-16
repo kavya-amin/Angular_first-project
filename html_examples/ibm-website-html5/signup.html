@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/styles/main.css">
+</head>
+
+<body>
+    <header>
+        <img src="assets/images/ibm.png" alt="IBM Logo">
+    </header>
+    <main>
+            <h2>Sign up</h2>
+        <form action="#" method="POST" autocomplete="on">
+            <div>
+                <label for="fullName">Enter Name <sup>*</sup>: </label>
+                <input type="text" id="fullName" name="fulName" required placeholder="Enter Fullname" autofocus>
+            </div>
+            <div>
+                <label for="passwd">Enter Password <sup>*</sup>: </label>
+                <input type="password" id="passwd" name="passwd" required placeholder=" Enter Password" minlength="8"
+                    maxlength="16">
+            </div>
+            <div>
+                <label for="passwdConfirm">Confirm Password <sup>*</sup>: </label>
+                <input type="password" id="passwdConfirm" name="passwdConfirm" required placeholder="Confirm Password" minlength="8"
+                    maxlength="16">
+            </div>
+            <div>
+                <label for="emailaddress">Enter Email <sup>*</sup>: </label>
+                <input type="email" id="emailaddress" name="emailaddress" pattern=".+@ibm.com" required
+                    placeholder="Enter Email">
+            </div>
+            <div>
+                <label for="phone">Enter Phone Number <sup>*</sup>: </label>
+                <input type="tel" id="phone" name="phone" required placeholder="Phone Number" maxlength="10">
+            </div>
+            <div>
+                <label for="dob">Enter DOB <sup>*</sup>: </label>
+                <input type="date" id="dob" name="dob">
+            </div>
+            <div>
+                <label for="favColor">Choose Favorite Color <sup>*</sup>: </label>
+                <input type="color" id="favColor" name="favColor">
+            </div>
+            <div>
+                <label for="linkedInProfileURL">Enter Linked In Profile URL:</label>
+                <input type="url" id="linkedInProfileURL" name="linkedInProfileURL" required
+                    placeholder="Enter your Linked In Profile">
+            </div>
+            <div>
+                <label for="whoseFan">Whose fan are you?</label>
+                <input type="radio" id="whoseFan" name="whoseFan" value="justin" required>Justin Bieber
+                <input type="radio" id="whoseFan1" name="whoseFan" value="taylorswift" required>taylor Swift
+            </div>
+            <div>
+                <label for="experience">Experience:</label>
+                <input type="range" id="experience" name="experience" min="0" max="40" step="5">
+            </div>
+            <div>
+                <label for="techLike">What Tech do you like?</label>
+                <input list="technologiesList" id="techLike" name="techLike" placeholder="Choose Technology" required>
+                <datalist id="technologiesList">
+                    <option value="Front End">HTML, CSS</option>
+                    <option value="Back End">Java, Python, PHP, DoNet Ruby, Perl, NodeJs</option>
+                    <option value="Database">SQL</option>
+                    <option value="Cloud"></option>
+                    <option value="ERP"></option>
+                </datalist>
+            </div>
+            <div>
+                <input type="submit" value="Sign up">
+                <p>Already have an account? <a href="signin.html">Sign in here</a></p>
+            </div>
+        </form>
+    </main>
+</body>
+
+</html>
